@@ -11,3 +11,25 @@
 // 	5.	Change Image
 // 	•	Display an image.
 // 	•	Add two buttons: one changes it to another image, and the second brings the first one back. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Tak 01</title>
+</head>
+<body>
+    <!-- qstn01 -->
+    <p class="para">Hello World</p>
+    <button onclick="changeText()">click to change text</button>
+
+    <!-- -->
+    
+</body>
+<script>
+    const changeText = ()=>{
+        document.getElementsByClassName('para')[0].innerText = "Welcome to DOM!"
+    }
+</script>
+</html>
