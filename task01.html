@@ -23,13 +23,20 @@
     <!-- qstn01 -->
     <p class="para">Hello World</p>
     <button onclick="changeText()">click to change text</button>
+    <br>
+    <hr>
 
-    <!-- -->
+    <!--qstn02 -->
+    <button onclick="yellowColor()">change Background Color</button>
     
 </body>
 <script>
     const changeText = ()=>{
         document.getElementsByClassName('para')[0].innerText = "Welcome to DOM!"
+    }
+
+    const yellowColor = ()=>{
+        document.getElementsByTagName('body')[0].style.backgroundColor = "yellow";
     }
 </script>
 </html>
