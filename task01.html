@@ -12,31 +12,58 @@
 // 	•	Display an image.
 // 	•	Add two buttons: one changes it to another image, and the second brings the first one back. -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Tak 01</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- qstn01 -->
     <p class="para">Hello World</p>
     <button onclick="changeText()">click to change text</button>
-    <br>
-    <hr>
+    <br />
+    <hr />
 
     <!--qstn02 -->
     <button onclick="yellowColor()">change Background Color</button>
-    
-</body>
-<script>
-    const changeText = ()=>{
-        document.getElementsByClassName('para')[0].innerText = "Welcome to DOM!"
-    }
+    <br>
+    <hr>
 
-    const yellowColor = ()=>{
-        document.getElementsByTagName('body')[0].style.backgroundColor = "yellow";
+    <!-- qstn03 -->
+     <input type="text"  id="inp">
+     <button onclick="getData()">get Data</button>
+     <h3></h3>
+     <br>
+     <hr>
+
+     <!-- qstn04 -->
+      <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eos dicta architecto consequuntur nostrum culpa incidunt quod sequi, voluptate sit quidem voluptatum blanditiis quo error nam, quasi minus libero aliquam!</p>
+      <button onclick="hide()">Hide</button>
+      <button onclick="show()">Show</button>
+      <br>
+      <hr>
+
+  </body>
+  <script>
+    const changeText = () => {
+      document.getElementsByClassName("para")[0].innerText = "Welcome to DOM!";
+    };
+
+    const yellowColor = () => {
+      document.getElementsByTagName("body")[0].style.backgroundColor = "yellow";
+    };
+
+    const getData = () =>{
+       let value =  document.getElementById('inp').value;
+       document.getElementsByTagName('h3')[0].innerText = value;
+    };
+    const hide = ()=>{
+        document.getElementsByClassName('para')[1].style.display = "none";
     }
-</script>
+       const show = ()=>{
+        document.getElementsByClassName('para')[1].style.display = "block";
+    }
+  </script>
 </html>
