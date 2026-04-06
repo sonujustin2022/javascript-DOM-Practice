@@ -45,6 +45,12 @@
       <br>
       <hr>
 
+      <!--qstn05  -->
+      <img class="imgs" style="height: 300px;" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Gallet_clamshell_600x600_2.jpg" alt="">
+      <br>
+      <button onclick="next()">Next</button>
+      <button onclick="back()">Back</button>
+
   </body>
   <script>
     const changeText = () => {
@@ -61,9 +67,17 @@
     };
     const hide = ()=>{
         document.getElementsByClassName('para')[1].style.display = "none";
-    }
-       const show = ()=>{
+    };
+     const show = ()=>{
         document.getElementsByClassName('para')[1].style.display = "block";
-    }
+    };
+    const next = () =>{
+        document.getElementsByClassName('imgs')[0].src = "https://www.licious.in/blog/wp-content/uploads/2022/04/shutterstock_1617156526-min-600x600.jpg"
+    };
+    const back = () =>{
+        document.getElementsByClassName('imgs')[0].src = "https://upload.wikimedia.org/wikipedia/commons/4/4f/Gallet_clamshell_600x600_2.jpg"
+    };
+
+
   </script>
 </html>
