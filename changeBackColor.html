@@ -1,0 +1,32 @@
+<!-- 🎯 Task: Store Background Color
+
+Problem Statement:
+Make a webpage where the user selects a background color from a dropdown menu.
+When they select a color, the background should change and the chosen color should be saved in sessionStorage.
+On refresh, the background should stay the same until the tab/browser is closed.
+Hint :- onChange event -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change background</title>
+</head>
+<body style="display: flex; flex-direction: column; align-items:center; height: 100vh;">
+    <div>
+        <select onchange="changeColor(this.value)" required >
+            <option value="white" >white</option>
+            <option  value="red">Red</option>
+             <option  value="yellow">yellow</option>
+              <option  value="cyan">Cyan</option>
+        </select>
+    </div>
+</body>
+<script>
+    const changeColor = (val) =>{
+        document.querySelector('body').style.backgroundColor = val;
+    }
+</script>
+</html>
+
