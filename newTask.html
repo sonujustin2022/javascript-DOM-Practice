@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div
+      style="
+        height: 200px;
+        width: 400px;
+        background-color: aqua;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+      "
+    >
+   <div>
+    <h1 style="text-align: center;">Add Note</h1>
+   </div>
+   <div style="display: flex; justify-content: center; gap: 25px;">
+    <input id="inp" style="border: solid 2px black; border-radius: 10px; padding: 10px;" type="text" placeholder="type here">
+    <button  onclick="addValue()" style="border: solid 2px black; border-radius: 10px; padding: 10px; background-color: aliceblue; color: blueviolet;">ADD</button>
+   </div>
+</div>
+  </body>
+  <script>
+    const addValue = () =>{
+        let val = inp.value;
+
+        
+        let obj = {
+            input: val
+        }
+       let jsonData = JSON.stringify(obj);
+       console.log(jsonData);
+
+    }
+  </script>
+</html>

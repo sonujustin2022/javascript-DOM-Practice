@@ -15,7 +15,10 @@ Hint :- onChange event -->
 </head>
 <body style="display: flex; flex-direction: column; align-items:center; height: 100vh;">
     <div>
-        <select onchange="changeColor(this.value)" required >
+        <h2 style="position: relative; right: 80px;">
+            Change BackGround Color
+        </h2>
+        <select onchange="changeColor(this.value)"  id="colorSelect" >
             <option value="white" >white</option>
             <option  value="red">Red</option>
              <option  value="yellow">yellow</option>
